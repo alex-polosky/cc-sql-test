@@ -1,0 +1,1 @@
+-- 4.	Create a SQL query that returns a list of means of arrival codes from the Encounter table which are not found in the EMS table.

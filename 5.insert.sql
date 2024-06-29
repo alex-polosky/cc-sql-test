@@ -1,0 +1,1 @@
+-- 5.	Based on the prior question, write an “INSERT” statement to add the missing records to the EMS table.  Make up whatever you want for the names.

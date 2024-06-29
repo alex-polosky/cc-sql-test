@@ -1,0 +1,25 @@
+name: cc-sql-test
+
+services:
+  # TODO: separate out database service into separate compose file
+  cc-db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: "db"
+      POSTGRES_HOST_AUTH_METHOD: "trust"
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - "5499:5432"
+    volumes:
+      - ./db/cc/postgres/:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 3
+    networks:
+      - cc
+
+networks:
+  cc:
+    name: cc

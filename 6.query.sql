@@ -1,0 +1,1 @@
+-- 6.	Create a SQL query that returns the top 5 duos of attending and treatment team members with the most encounter records.

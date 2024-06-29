@@ -1,0 +1,4 @@
+-- 8.	Use your creativity to create a stored procedure that does something with 2 of the 3 tables.
+--      It could be inserting records to the tables and then returning something, etc.
+--      We just want to see your ability to create stored procedures.
+--      Just a simple procedure with no more than 50 lines of codes.
