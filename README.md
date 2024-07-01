@@ -14,8 +14,20 @@ I did not include a foreign key relationship for the Means of Arrival CD, as thi
 
 ## 3.
 
-``
+`docker compose exec -it cc-db psql -U postgres -f /opt/cc/scripts/3.query.sql`
 
-These requirements are ambigious: they are either asking for "(the average age and the average LOS) for each attending name per year and month" OR "(the average age)", and "(the average LOS) for each attending name per year and month".
+## 4.
 
-Due to the implied comma for year and month, I'm making an assumption that this means the former.
+`docker compose exec -it cc-db psql -U postgres -f /opt/cc/scripts/4.query.sql`
+
+## 5.
+
+`docker compose exec -it cc-db psql -U postgres -f /opt/cc/scripts/5.insert.sql`
+
+## 6.
+
+`docker compose exec -it cc-db psql -U postgres -f /opt/cc/scripts/6.query.sql`
+
+## 7.
+
+`docker compose exec -it cc-db psql -U postgres -f /opt/cc/scripts/7.query.sql`

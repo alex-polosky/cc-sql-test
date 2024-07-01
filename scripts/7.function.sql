@@ -1,1 +1,0 @@
--- 7.	Use an analytical function similar to row_number() to assign an ordered number to each record based on ED department, attending name and age.

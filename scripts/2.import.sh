@@ -3,7 +3,7 @@
 
 # Prior to running this script, convert each sheet in the workbook to a file, following this format:
 # ./data/test-data.ems.csv
-# ./data/test-data.encounter.csv
+# ./data/test-data.encounter.csv  (this MUST ensure that the columns involving datetimes are actually set to show the date AND time)
 # ./data/test-data.providerlos.csv
 
 psql -U postgres -c "\copy \"EMS\" FROM '/opt/cc/data/test-data.ems.csv' CSV HEADER NULL 'null'"
